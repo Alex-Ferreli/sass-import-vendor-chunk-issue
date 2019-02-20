@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css';
 import * as serviceWorker from './serviceWorker';
+
+// Using JS import, css go in vendor chunk
+// import 'bootstrap/scss/bootstrap-reboot.scss';
+
+// Using SCSS import, css go in main chunk
+import './index.scss';
+
+// Comment/decomment above lines and do the build to see the difference
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
